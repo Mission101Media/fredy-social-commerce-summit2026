@@ -1,7 +1,7 @@
 "use client";
 
 const contact = {
-  name: "Fredy",
+  name: "Fredy Mfuko",
   company: "Mission 101 Media",
   phone: "+17185703493",
   email: "fredy@mission101media.com",
@@ -12,20 +12,20 @@ function saveContact() {
   const vcard = [
     "BEGIN:VCARD",
     "VERSION:3.0",
-    "N:;Fredy;;;",
-    "FN:Fredy",
+    "N:Mfuko;Fredy;;;",
+    "FN:Fredy Mfuko",
     "ORG:Mission 101 Media",
     "TITLE:Creative Director & Multimedia Producer",
     `TEL;TYPE=CELL:${contact.phone}`,
     `EMAIL;TYPE=INTERNET:${contact.email}`,
     `URL:${contact.website}`,
-    "NOTE:Met Fredy at Social Commerce Summit.",
+    "NOTE:Met Fredy Mfuko at Social Commerce Summit.",
     "END:VCARD",
   ].join("\r\n");
   const url = URL.createObjectURL(new Blob([vcard], { type: "text/vcard;charset=utf-8" }));
   const link = document.createElement("a");
   link.href = url;
-  link.download = "Fredy-Mission-101-Media.vcf";
+  link.download = "Fredy-Mfuko-Mission-101-Media.vcf";
   document.body.appendChild(link);
   link.click();
   link.remove();
@@ -49,7 +49,7 @@ export default function Home() {
   return (
     <main>
       <nav className="nav" aria-label="Primary navigation">
-        <a className="wordmark" href="#top" aria-label="Fredy home"><span>F</span> Fredy</a>
+        <a className="wordmark" href="#top" aria-label="Fredy Mfuko home"><span>F</span> Fredy Mfuko</a>
         <a className="nav-save" href="#contact">Let&apos;s connect <span>↗</span></a>
       </nav>
 
@@ -57,16 +57,16 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow"><span /> Social Commerce Summit</p>
           <h1>Let&apos;s make<br />something <em>move.</em></h1>
-          <p className="intro">I&apos;m Fredy — a creative director and multimedia producer helping brands turn strong ideas into content people feel, remember and act on.</p>
+          <p className="intro">I&apos;m Fredy Mfuko — a creative director and multimedia producer helping brands turn strong ideas into content people feel, remember and act on.</p>
           <div className="hero-actions">
             <button className="button primary" onClick={saveContact}>＋ Save my contact</button>
             <a className="button text-button" href="#reel">Watch the reel <span>↓</span></a>
           </div>
-          <p className="microcopy">One tap adds Fredy to your phone</p>
+          <p className="microcopy">One tap adds Fredy Mfuko to your phone</p>
         </div>
         <div className="portrait-wrap">
           <div className="portrait-label">NYC · Creative partner</div>
-          <img src="/fredy-headshot.jpg" alt="Fredy, founder of Mission 101 Media" />
+          <img src="/fredy-headshot.jpg" alt="Fredy Mfuko, founder of Mission 101 Media" />
           <div className="portrait-card">
             <span>Mission 101 Media</span>
             <strong>Reach. Captivate.<br />Convert.</strong>
@@ -121,7 +121,7 @@ export default function Home() {
         <p>Have an idea worth moving on?</p>
         <h2>Let&apos;s build the<br /><em>next thing.</em></h2>
         <div className="contact-actions">
-          <a className="button light" href="https://mission101media.com/booking" target="_blank" rel="noreferrer">Book time with Fredy ↗</a>
+          <a className="button light" href="https://mission101media.com/booking" target="_blank" rel="noreferrer">Book time with Fredy Mfuko ↗</a>
           <button className="button outline" onClick={saveContact}>＋ Save contact</button>
         </div>
         <div className="contact-details">
@@ -130,7 +130,7 @@ export default function Home() {
           <a href="https://mission101media.com" target="_blank" rel="noreferrer">mission101media.com</a>
         </div>
       </section>
-      <footer><span>Mission 101 Media</span><span>Fredy @ Social Commerce Summit · 2026</span></footer>
+      <footer><span>Mission 101 Media</span><span>Fredy Mfuko @ Social Commerce Summit · 2026</span></footer>
     </main>
   );
 }
