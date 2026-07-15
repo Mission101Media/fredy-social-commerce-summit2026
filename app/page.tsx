@@ -56,7 +56,7 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow"><span /> Social Commerce Summit</p>
-          <h1>Let&apos;s make<br />something <em>move.</em></h1>
+          <h1>Let&apos;s create something<br />that <em>moves people.</em></h1>
           <p className="intro">I&apos;m Fredy Mfuko — a creative director and multimedia producer helping brands turn strong ideas into content people feel, remember and act on.</p>
           <div className="hero-actions">
             <button className="button primary" onClick={saveContact}>＋ Save my contact</button>
