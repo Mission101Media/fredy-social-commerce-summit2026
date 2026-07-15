@@ -1,6 +1,6 @@
-# Fredy @ Social Commerce Summit
+# Fredy Mfuko @ Social Commerce Summit
 
-Mobile-first contact landing page for Fredy at Mission 101 Media.
+Mobile-first contact landing page for Fredy Mfuko at Mission 101 Media.
 
 ## Run locally
 
